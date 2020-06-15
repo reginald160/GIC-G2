@@ -1,0 +1,120 @@
+﻿@model GIC_G2.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    @*<section class="container" >
+
+
+        <div id="details">
+            <h4>Employee Details</h4>
+            <hr />
+            <dl class="row" >
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Number)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Number)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TrackingNum)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TrackingNum)
+                </dd>
+            </dl>
+        </div>
+    </section>*@
+
+    <div class="container png">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 details">
+                <div class="row pb-2">
+                    <div class="col-md-6 font-weight-bold">
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DisplayFor(model => model.FirstName)
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-md-6 font-weight-bold">
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DisplayFor(model => model.LastName)
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-md-6 font-weight-bold">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DisplayFor(model => model.Email)
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-md-6 font-weight-bold">
+                        @Html.DisplayNameFor(model => model.Number)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DisplayFor(model => model.Number)
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-md-6 font-weight-bold">
+                        @Html.DisplayNameFor(model => model.Address)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DisplayFor(model => model.Address)
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    @section Register{
+                        <div class="col-md-6 font-weight-bold">
+                            @Html.DisplayNameFor(model => model.TrackingNum)
+                        </div>
+                        <div class="col-md-6">
+                            @Html.DisplayFor(model => model.TrackingNum)
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+           
+
+        </div>
+
+    </div>
+@*<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>*@
